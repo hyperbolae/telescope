@@ -1,3 +1,7 @@
 .cell {
-    background: orange;
+    height: 100vh;
+}
+
+.message {
+    border: 0;
 }
