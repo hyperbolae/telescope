@@ -1,7 +1,22 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-    messages: ["This is a message", "This is another message"],
+    messages: [
+        {
+            id: 1,
+            body: "This is an example",
+            username: "Tiny Horse",
+            position: [0, 0],
+            parent: null
+        },
+        {
+            id: 2,
+            body: "This is another example",
+            username: "Large Squirrel",
+            position: [-1, 0],
+            parent: 1
+        }
+    ]
 };
 
 export const slice = createSlice({
